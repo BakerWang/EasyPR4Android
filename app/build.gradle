@@ -1,0 +1,56 @@
+apply plugin: 'com.android.model.application'
+model {
+    android {
+        compileSdkVersion = 22
+        buildToolsVersion = "23.0.0"
+
+        defaultConfig.with {
+            applicationId = "yanyu.com.mrcar"
+            minSdkVersion.apiLevel = 21
+            targetSdkVersion.apiLevel = 22
+            versionCode = 1
+            versionName = "1.0"
+        }
+    }
+    android.ndk
+            {
+                moduleName = "mrcarproc"
+                stl = "gnustl_shared"
+                cppFlags += "-ID:/opencv31/build/install/include/opencv".toString()
+                cppFlags += "-ID:/opencv31/build/install/include".toString()
+                cppFlags +="-fexceptions"
+                cppFlags +="-std=c++11"
+                cppFlags+="-llog"
+                ldLibs += ["android", "EGL", "GLESv2", "dl", "log", "z"]
+            }
+    android.productFlavors {
+        create("armv7") {
+            ndk.with {
+                abiFilters += "armeabi-v7a"
+                File curDir = file('./')
+                curDir = file(curDir.absolutePath)
+                String libsDir = curDir.absolutePath+"\\src\\main\\jniLibs\\armeabi-v7a\\"
+                ldLibs += libsDir + "libopencv_java3.so"
+            }
+        }
+    }
+    android.buildTypes {
+        release {
+            ndk.with {
+                debuggable = true
+            }
+        }
+        debug {
+                debuggable = true
+            ndk.with {
+                debuggable = true
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':openCVLibrary310')
+}
+
