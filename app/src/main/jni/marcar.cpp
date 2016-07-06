@@ -13,8 +13,9 @@ using namespace cv;
 extern "C" {
 #endif
 
-static const char* kDefaultSvmPath = "/sdcard/ai/svm.xml";
-static const char* kDefaultAnnPath = "/sdcard/ai/ann.xml";
+static const char* kDefaultSvmPath = "/sdcard/mrcar/svm.xml";
+static const char* kDefaultAnnPath = "/sdcard/mrcar/ann.xml";
+static const char*provincemapping="/sdcard/mrcar/province_mapping";
 Ptr<ml::SVM> svm_ = ml::SVM::load<ml::SVM>(kDefaultSvmPath);
 cv::Ptr<cv::ml::ANN_MLP> ann_ = ml::ANN_MLP::load<ml::ANN_MLP>(kDefaultAnnPath);
 map<string, string> provincemapping_;
@@ -48,24 +49,6 @@ static const char *kChars[] = {
         /*  31  */
 };
 
-//std::string utf8_to_gbk(const char* utf8) {
-//    int len = MultiByteToWideChar(CP_UTF8, 0, utf8, -1, NULL, 0);
-//    wchar_t* wszGBK = new wchar_t[len + 1];
-//    memset(wszGBK, 0, len * 2 + 2);
-//    MultiByteToWideChar(CP_UTF8, 0, utf8, -1, wszGBK, len);
-//    len = WideCharToMultiByte(CP_ACP, 0, wszGBK, -1, NULL, 0, NULL, NULL);
-//    char* szGBK = new char[len + 1];
-//    memset(szGBK, 0, len + 1);
-//    WideCharToMultiByte(CP_ACP, 0, wszGBK, -1, szGBK, len, NULL, NULL);
-//    std::string strTemp(szGBK);
-//    if (wszGBK)
-//        delete[] wszGBK;
-//    if (szGBK)
-//        delete[] szGBK;
-//    return strTemp;
-//}
-
-
 void split(std::string& s, std::string& delim, std::vector< std::string >* ret)
 {
     size_t last = 0;
@@ -85,7 +68,7 @@ void split(std::string& s, std::string& delim, std::vector< std::string >* ret)
 
 void init()
 {
-    ifstream pf("/sdcard/ai/etc/province_mapping");
+    ifstream pf(provincemapping);
     if (!pf)
     {
         pf.close();

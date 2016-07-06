@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,23 +39,55 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import android.util.Log;
 
 public class MainActivity extends Activity {
-    private static final String    TAG = "OCVSample::Activity";
+    private static final String    TAG = "MRCar";
     private CameraBridgeViewBase mOpenCvCameraView;
-    String path="/sdcard/ai/cartest.jpg";
+    private String imgPath="cartest.jpg";
+    private String FILE_INSDCARD_DIR="mrcar";
+    private String svmPath="svm.xml";
+    private String annPath="ann.xml";
+    private String mappingPath="province_mapping";
     Bitmap bmp ;
     ImageView im;
     TextView textview;
+    EditText et;
     boolean bgray=true;
-    private Mat                    mRgba;
-    private Mat                    mGray;
-    private File                   mCascadeFile;
-    private CascadeClassifier      mJavaDetector;
-    private DetectionBasedTracker  mNativeDetector;
-    private float                  mRelativeFaceSize   = 0.2f;
-    private int                    mAbsoluteFaceSize   = 40;
-    private static final Scalar FACE_RECT_COLOR     = new Scalar(0, 255, 0, 255);
+    private void initFile(){
+        File file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR + "/"));
+        if(!file.exists())
+            file.mkdirs();
+         try {
+            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+imgPath));
+            if(!file.exists())
+                copyFileFromAssetsToSDCard(imgPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+ imgPath);
+            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+svmPath));
+            if(!file.exists())
+                copyFileFromAssetsToSDCard(svmPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+svmPath);
+            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+annPath));
+            if(!file.exists())
+                copyFileFromAssetsToSDCard(annPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+annPath);
+            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+ mappingPath));
+            if(!file.exists())
+                copyFileFromAssetsToSDCard( mappingPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+ mappingPath);
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void copyFileFromAssetsToSDCard(String resname,String sdpath) throws Throwable {
+        InputStream is = getResources().getAssets().open(resname);
+        OutputStream os = new FileOutputStream(sdpath);
+        byte data[] = new byte[1024];
+        int len;
+        while ((len = is.read(data)) > 0) {
+            os.write(data, 0, len);
+        }
+        is.close();
+        os.close();
+    }
     public static native String plateRecognition(long matImg,long matResult);
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
@@ -75,8 +108,9 @@ public class MainActivity extends Activity {
                             }
                            else
                             {
-                                bmp= BitmapFactory.decodeFile(path);
+                                bmp= BitmapFactory.decodeFile("/sdcard/"+FILE_INSDCARD_DIR+"/"+ imgPath);
                                 im.setImageBitmap(bmp);
+                                et.setText("");
                             }
                             bgray=!bgray;
                         }
@@ -98,7 +132,7 @@ public class MainActivity extends Activity {
                 case 1:
                     Bundle b=msg.getData();
                     String str=b.getString("license");
-                    textview.setText(b.getString("license"));
+                    et.setText(b.getString("license"));
                     im.setImageBitmap((Bitmap)b.getParcelable("bitmap"));
                     break;
                 default:
@@ -115,7 +149,6 @@ public class MainActivity extends Activity {
             Utils.bitmapToMat(bmp, m);
             try
             {
-                //Mat m= Imgcodecs.imread("/sdcard/ai/cartest.jpg");
                 String license=plateRecognition(m.getNativeObjAddr(), m.getNativeObjAddr());
                 Utils.matToBitmap(m, bmp);
                 Message msg=new Message();
@@ -153,9 +186,10 @@ public class MainActivity extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);//全屏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_main);
-        bmp= BitmapFactory.decodeFile(path);
+        initFile();
+        bmp= BitmapFactory.decodeFile("/sdcard/"+FILE_INSDCARD_DIR+"/"+ imgPath);
         im=(ImageView)findViewById(R.id.imageView);
-        textview=(TextView)findViewById(R.id.textView);
+        et=(EditText)findViewById(R.id.editText);
     }
 
     @Override
@@ -176,7 +210,6 @@ public class MainActivity extends Activity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
