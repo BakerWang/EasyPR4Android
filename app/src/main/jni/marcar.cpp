@@ -37,9 +37,7 @@ Java_yanyu_com_mrcar_MainActivity_plateRecognition(JNIEnv *env, jclass type, jlo
         break;
     }
     result=img.clone();
-    putText(img,license,Point(500,500),CV_FONT_HERSHEY_COMPLEX,1.0f,Scalar(255, 0, 0));
     cvtColor(result,result, cv::COLOR_RGB2BGRA);
-    LOGI("end plateRecognition");
     return env->NewStringUTF(license.c_str());
 }
 
