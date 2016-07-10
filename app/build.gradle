@@ -18,10 +18,12 @@ model {
                 stl = "gnustl_shared"
                 cppFlags += "-ID:/opencv31/build/install/include/opencv".toString()
                 cppFlags += "-ID:/opencv31/build/install/include".toString()
+                cppFlags += "-ID:/A_workspace/MRCar/app/src/main/jni/include".toString()
+                cppFlags += "-ID:/A_workspace/MRCar/app/src/main/jni".toString()
                 cppFlags +="-fexceptions"
                 cppFlags +="-std=c++11"
                 cppFlags+="-llog"
-                ldLibs += ["android", "EGL", "GLESv2", "dl", "log", "z"]
+                ldLibs += ["android", "EGL", "GLESv2", "dl", "log", "z","gomp"]
             }
     android.productFlavors {
         create("armv7") {

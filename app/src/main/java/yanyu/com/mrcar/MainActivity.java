@@ -49,32 +49,30 @@ public class MainActivity extends Activity {
     private String FILE_INSDCARD_DIR="mrcar";
     private String svmPath="svm.xml";
     private String annPath="ann.xml";
+    private String ann_chinesePath="ann_chinese.xml";
     private String mappingPath="province_mapping";
     Bitmap bmp ;
     ImageView im;
     TextView textview;
     EditText et;
     boolean bgray=true;
+    private void CopyOneFile(String path){
+        File file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+path));
+        try {
+            copyFileFromAssetsToSDCard(path,"/sdcard/"+FILE_INSDCARD_DIR+"/"+ path);
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
     private void initFile(){
         File file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR + "/"));
         if(!file.exists())
             file.mkdirs();
-         try {
-            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+imgPath));
-            if(!file.exists())
-                copyFileFromAssetsToSDCard(imgPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+ imgPath);
-            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+svmPath));
-            if(!file.exists())
-                copyFileFromAssetsToSDCard(svmPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+svmPath);
-            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+annPath));
-            if(!file.exists())
-                copyFileFromAssetsToSDCard(annPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+annPath);
-            file=new File(String.format("/sdcard/"+FILE_INSDCARD_DIR+"/"+ mappingPath));
-            if(!file.exists())
-                copyFileFromAssetsToSDCard( mappingPath,"/sdcard/"+FILE_INSDCARD_DIR+"/"+ mappingPath);
-        } catch (Throwable e) {
-            e.printStackTrace();
-        }
+             CopyOneFile(imgPath);
+             CopyOneFile(annPath);
+             CopyOneFile(svmPath);
+             CopyOneFile(mappingPath);
+             CopyOneFile(ann_chinesePath);
     }
 
     private void copyFileFromAssetsToSDCard(String resname,String sdpath) throws Throwable {
@@ -99,6 +97,7 @@ public class MainActivity extends Activity {
                     Log.i(TAG, "OpenCV loaded successfully");
                     System.loadLibrary("mrcarproc");
                     im.setImageBitmap(bmp);
+                    new plateTask().execute();
                     im.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
