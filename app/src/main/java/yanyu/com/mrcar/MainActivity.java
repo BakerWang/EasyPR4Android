@@ -54,8 +54,7 @@ import android.util.Log;
 
 public class MainActivity extends Activity {
     private static final String TAG = "MRCar";
-//    private CameraBridgeViewBase mOpenCvCameraView;
-    private String initimgPath="cartest.jpg";
+    private String initimgPath="test.jpg";
     private String FILE_INSDCARD_DIR="mrcar";
     private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
     private static final int SELECT_IMAGE_ACTIVITY_REQUEST_CODE = 200;
@@ -134,7 +133,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//取消标题栏
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//全屏
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//全屏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_main);
         initFile();
