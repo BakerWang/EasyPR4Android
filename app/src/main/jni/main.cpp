@@ -8,7 +8,7 @@
 using namespace easypr;
 int main(int argc, const char* argv[]) {
   std::shared_ptr<easypr::Kv> kv(new easypr::Kv);
-  kv->load("etc/chinese_mapping");
+  kv->load("etc/chinese_mapping.xml");
   CPlateRecognize pr;
   pr.setResultShow(false);
   pr.setDetectType(PR_DETECT_CMSER);

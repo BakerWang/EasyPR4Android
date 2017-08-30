@@ -1,0 +1,388 @@
+
+{
+	"buildFiles" : [ "D:/A_workspace/OCR/MRCarAndroid1.5/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"D:\\Java\\adroidsdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\A_workspace\\OCR\\MRCarAndroid1.5\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"IlmImf-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "IlmImf",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libIlmImf.a",
+			"toolchain" : "466046583"
+		},
+		"libjasper-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjasper",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibjasper.a",
+			"toolchain" : "466046583"
+		},
+		"libjpeg-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libjpeg",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibjpeg.a",
+			"toolchain" : "466046583"
+		},
+		"libpng-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libpng",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibpng.a",
+			"toolchain" : "466046583"
+		},
+		"libtiff-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libtiff",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibtiff.a",
+			"toolchain" : "466046583"
+		},
+		"libwebp-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libwebp",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/liblibwebp.a",
+			"toolchain" : "466046583"
+		},
+		"mrcar-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "mrcar",
+			"buildCommand" : "D:\\Java\\adroidsdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\A_workspace\\OCR\\MRCarAndroid1.5\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target mrcar",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/main.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/mrcar.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/chars_identify.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/chars_recognise.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/chars_segment.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/core_func.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/feature.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/params.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/plate_detect.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/plate_judge.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/plate_locate.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/core/plate_recognize.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/preprocess/deface.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/preprocess/gdts.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/preprocess/mc_data.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/train/ann_train.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/train/svm_train.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/train/train.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/util/kv.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/util/program_options.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/src/util/util.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/thirdparty/LBP/helper.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/thirdparty/LBP/lbp.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/thirdparty/mser/mser2.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/thirdparty/textDetect/erfilter.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=D:/Java/adroidsdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Java/adroidsdk/ndk-bundle/sysroot  -DTBB_USE_GCC_BUILTINS=1 -D__TBB_GCC_BUILTIN_ATOMICS_PRESENT=1 -Dmrcar_EXPORTS -I..\\..\\..\\..\\src\\main\\jni\\include -I..\\..\\..\\..\\src\\main\\jni -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include -isystem D:\\A_workspace\\opencv-android-sdk\\sdk\\native\\jni\\include\\opencv -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem D:\\Java\\adroidsdk\\ndk-bundle\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/Java/adroidsdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/src/main/jni/thirdparty/xmlParser/xmlParser.cpp",
+					"workingDirectory" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "D:/A_workspace/OCR/MRCarAndroid1.5/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmrcar.so",
+			"toolchain" : "466046583"
+		},
+		"opencv_calib3d-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_calib3d",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_calib3d.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_core-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_core",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_core.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_features2d-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_features2d",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_features2d.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_flann-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_flann",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_flann.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_highgui-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_highgui",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_highgui.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_imgcodecs-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_imgcodecs",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_imgcodecs.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_imgproc-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_imgproc",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_imgproc.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_java-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_java",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_java3.so",
+			"toolchain" : "466046583"
+		},
+		"opencv_ml-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_ml",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_ml.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_objdetect-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_objdetect",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_objdetect.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_photo-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_photo",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_photo.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_shape-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_shape",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_shape.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_stitching-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_stitching",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_stitching.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_superres-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_superres",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_superres.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_video-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_video",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_video.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_videoio-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_videoio",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_videoio.a",
+			"toolchain" : "466046583"
+		},
+		"opencv_videostab-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "opencv_videostab",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/libs/arm64-v8a/libopencv_videostab.a",
+			"toolchain" : "466046583"
+		},
+		"tbb-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "tbb",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libtbb.a",
+			"toolchain" : "466046583"
+		},
+		"tegra_hal-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "tegra_hal",
+			"buildType" : "debug",
+			"output" : "D:/A_workspace/opencv-android-sdk/sdk/native/3rdparty/libs/arm64-v8a/libtegra_hal.a",
+			"toolchain" : "466046583"
+		}
+	},
+	"toolchains" : 
+	{
+		"466046583" : 
+		{
+			"cCompilerExecutable" : "D:/Java/adroidsdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/Java/adroidsdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
