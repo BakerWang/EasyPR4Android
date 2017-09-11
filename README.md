@@ -1,6 +1,6 @@
 ## 基于EasyPR的车牌识别android实现
 
-CarPlateAndroid，基于[EasyPR](https://github.com/liuruoze/EasyPR)1.5beta的android实现
+EasyPR4Android，基于[EasyPR](https://github.com/liuruoze/EasyPR)1.5beta的android实现
 
 
 ### 更新：
@@ -40,11 +40,13 @@ app启动时会默认从assets加载测试图片，并进行识别，返回结�
 
 ### 参考：
 
-* 1.[Android Studio 2.2 更方便地创建JNI项目-CMake](http://www.jianshu.com/p/4eefb16d83e3)
+* 1.[Android Studio 开发opencv3应用](https://wenku.baidu.com/view/8665a8efcc17552706220881)
 
-* 2.[Android 使用OpenCV的三种方式(Android Studio)](http://blog.csdn.net/sbsujjbcy/article/details/49520791)
+* 2.[Android Studio 2.2 更方便地创建JNI项目-CMake](http://www.jianshu.com/p/4eefb16d83e3)
 
-* 3.[NDK-JNI实战教程](http://blog.csdn.net/yanbober/article/details/45309049)
+* 3.[Android 使用OpenCV的三种方式(Android Studio)](http://blog.csdn.net/sbsujjbcy/article/details/49520791)
 
-* 4.[在Android Studio上进行OpenCV 3.1开发
+* 4.[NDK-JNI实战教程](http://blog.csdn.net/yanbober/article/details/45309049)
+
+* 5.[在Android Studio上进行OpenCV 3.1开发
 ](http://johnhany.net/2016/01/opencv-3-development-in-android-studio/)
