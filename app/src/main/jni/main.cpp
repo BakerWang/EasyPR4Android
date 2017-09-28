@@ -1,10 +1,4 @@
 #include "easypr.h"
-#include "easypr/util/switch.hpp"
-
-#include "accuracy.hpp"
-#include "chars.hpp"
-#include "plate.hpp"
-
 using namespace easypr;
 int main(int argc, const char* argv[]) {
   std::shared_ptr<easypr::Kv> kv(new easypr::Kv);

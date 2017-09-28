@@ -1,13 +1,8 @@
 #include <jni.h>
 #include <opencv2/opencv.hpp>
 #include <android/log.h>
-#include <string>
-#include <vector>
-#include <sstream>
-#include "fstream"
 #include "util.h"
 #include "easypr.h"
-#include "easypr/util/switch.hpp"
 using namespace std;
 using namespace cv;
 using namespace easypr;
